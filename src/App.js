@@ -54,13 +54,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navbar />} />
-        {/* <Route path='/' element={<Cards cities={cities} onClose={onClose} />} />
+        <Route path='/' element={<Navbar onSearch={onSearch} />} />
+        <Route path='/' element={<Cards cities={cities} onClose={onClose} />} />
         <Route path='/about' element={<About />} />
         <Route
           path='/city/:id' //:cityId
           element={<City onFilter={onFilter} />}
-        /> */}
+        />
       </Routes>
     </BrowserRouter>
   );
