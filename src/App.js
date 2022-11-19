@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import City from "./components/City";
@@ -52,20 +52,17 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <BrowserRouter>
       <Routes>
-        <Route path={'/'} element={<Navbar onSearch={onSearch} />}></Route>
+        <Route path='/' element={<Navbar />} />
+        {/* <Route path='/' element={<Cards cities={cities} onClose={onClose} />} />
+        <Route path='/about' element={<About />} />
         <Route
-          path={'/'}
-          element={<Cards cities={cities} onClose={onClose} />}
-        ></Route>
-        <Route path={'/about'} element={<About />}></Route>
-        <Route
-          path={'/city/:id'} //:cityId
+          path='/city/:id' //:cityId
           element={<City onFilter={onFilter} />}
-        ></Route>
+        /> */}
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 
