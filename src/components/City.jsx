@@ -9,19 +9,49 @@ export default function City({ onFilter }) {
   if (city) {
     return (
       <div className={style.card}>
-        <div className={style.container}>
-          <h2>{city.name}</h2>
-          <img
+        <div>
+          <h2 className={style.cardTitle}>{city.name}</h2>
+          <img className={style.img}
             src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
             alt=''
           />
           <div className={style.info}>
-            <div>Temperature: {city.temp} ºC</div>
-            <div>Weather: {city.weather}</div>
-            <div>Wind: {city.wind} km/h</div>
-            <div>Clouds: {city.clouds}</div>
-            <div>Latitude: {city.latitud}º</div>
-            <div>Longitude: {city.longitud}º</div>
+            <div className={style.line}>
+              <p>
+                <b>Temperature:</b>
+              </p>{" "}
+              <p>{city.temp} ºC</p>
+            </div>
+            <div className={style.line}>
+              <p>
+                <b>Weather:</b>{" "}
+              </p>
+              <p>{city.weather}</p>
+            </div>
+            <div className={style.line}>
+              <p>
+                <b>Clouds:</b>
+              </p>{" "}
+              <p> {city.clouds}</p>
+            </div>
+            <div className={style.line}>
+              <p>
+                <b>Wind:</b>
+              </p>{" "}
+              <p>{city.wind} km/h</p>
+            </div>
+            <div className={style.line}>
+              <p>
+                <b>Latitude:</b>{" "}
+              </p>{" "}
+              <p>{city.latitud}º</p>
+            </div>
+            <div className={style.line}>
+              <p>
+                <b>Longitude:</b>
+              </p>
+              <p> {city.longitud}º</p>
+            </div>
           </div>
         </div>
       </div>

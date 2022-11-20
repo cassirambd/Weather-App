@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Caveat&family=Concert+One&family=Courgette&family=Dangrek&family=Fredoka+One&family=Itim&family=Neucha&family=Pangolin&family=Patrick+Hand&family=Sniglet&display=swap");
 
 .navBar {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: rgba(237, 241, 251, 0.8);
   backdrop-filter: blur(3px);
@@ -14,7 +16,6 @@
 
 .title {
   display: flex;
-  width: 100%;
   gap: 30px;
   width: 140%;
   color: rgba(93, 137, 171, 0.848);
@@ -27,14 +28,13 @@
 
 .img {
   bottom: 50%;
-  max-width: 18%;
+  max-width: 16%;
   opacity: 70%;
   -webkit-filter: drop-shadow(2px 5px 5px rgb(255, 255, 255));
   filter: drop-shadow(3px 4px 2px rgb(255, 255, 255));
 }
 
 .about {
-  padding-left: 410px;
   color: rgba(93, 137, 171, 0.848);
   font-size: 30px;
   font-weight: bold;
