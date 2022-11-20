@@ -11,7 +11,8 @@ export default function City({ onFilter }) {
       <div className={style.card}>
         <div>
           <h2 className={style.cardTitle}>{city.name}</h2>
-          <img className={style.img}
+          <img
+            className={style.img}
             src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
             alt=''
           />

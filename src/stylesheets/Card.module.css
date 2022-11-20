@@ -5,17 +5,16 @@
   display: inline-block;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(900deg, #afded461 10%, #e5ecf0d9 80%);
+  background: linear-gradient(200deg, #afded461 10%, #e5ecf0d9 80%);
   border-radius: 20px;
   border: 3.5px dashed rgba(254, 254, 254, 0.9);
-  transition: all .2s;
+  transition: all 0.2s;
   box-shadow: 12px 12px 2px 1px rgba(103, 185, 194, 0.477);
 }
- 
 
 .card:hover {
   box-shadow: -12px 12px 2px -1px rgba(103, 185, 194, 0.477);
- }
+}
 
 .cardTitle {
   padding: 1.5px;
@@ -24,12 +23,12 @@
   border-radius: 40px;
   color: rgba(42, 40, 40, 0.9);
   font-size: 35px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
   font-weight: bold;
   background-color: rgba(241, 190, 59, 0.633);
 }
 
-#closeIcon { 
+#closeIcon {
   display: flex;
   justify-content: flex-end;
   margin-right: 8px;
@@ -70,7 +69,7 @@
 .no {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 2px;
   margin: 2em 14em;
   border: 2px dashed rgba(81, 80, 77, 0.8);
   border-radius: 40px;

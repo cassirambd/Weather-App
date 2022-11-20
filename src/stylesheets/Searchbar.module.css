@@ -16,7 +16,7 @@
 }
 
 .button {
- margin-left: 2px;
+  margin-left: 2px;
   width: 35%;
   padding: 7px 15px;
   border-width: 2.5px;
@@ -24,17 +24,17 @@
   border-radius: 15px;
   box-sizing: border-box;
   background-color: rgba(24, 92, 194, 0.4);
-  color:rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
 }
 
 .button:hover {
   background-color: rgb(240, 240, 240);
-  color:rgba(24, 92, 194, 0.489);
-  transition: all .2s;
+  color: rgba(24, 92, 194, 0.489);
+  transition: all 0.2s;
   box-shadow: 5px 5px 4px 1px rgba(103, 185, 194, 0.477);
 }
 
 .input:hover {
-  transition: all .2s;
+  transition: all 0.2s;
   box-shadow: 5px 5px 4px 1px rgba(103, 185, 194, 0.477);
 }

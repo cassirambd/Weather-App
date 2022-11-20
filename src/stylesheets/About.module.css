@@ -1,0 +1,22 @@
+.card {
+  margin: 6em 25em;
+  padding: 2em;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background: linear-gradient(900deg, #afded461 10%, #e5ecf0d9 80%);
+  border-radius: 20px;
+  border: 3px solid rgba(254, 254, 254, 0.9);
+  transition: all 0.2s;
+  box-shadow: 12px 12px 2px 1px rgba(103, 185, 194, 0.477);
+}
+
+.card:hover {
+  box-shadow: -12px 12px 2px -1px rgba(103, 185, 194, 0.477);
+}
+
+.about {
+  font-size: 30px;
+  color: rgba(32, 31, 31, 0.843);
+}
+

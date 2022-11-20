@@ -24,7 +24,7 @@ export default function Cards({ cities, onClose }) {
   } else {
     return (
       <div>
-        <h1 className={style.no}>No cities</h1>
+        <p className={style.no}>No cities</p>
       </div>
     );
   }
