@@ -66,3 +66,16 @@
   display: flex;
   justify-content: center;
 }
+
+.no {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 2em 14em;
+  border: 2px dashed rgba(81, 80, 77, 0.8);
+  border-radius: 40px;
+  color: rgba(42, 40, 40, 0.9);
+  font-size: 45px;
+  font-family: "Patrick Hand", cursive;
+  background-color: rgba(241, 190, 59, 0.633);
+}
