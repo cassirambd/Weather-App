@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "../stylesheets/Card.module.css";
 
-export default function Card({ min, max, name, img, onClose, id }) {
+export default function Card({ min, max, name, img, onClose, id, description }) {
+  console.log(description)
   return (
     <div className={style.card}>
       <div id={style["closeIcon"]} className={style.row}>
@@ -14,6 +15,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
         <Link to={`/city/${id}`} style={{ textDecoration: "none" }}>
           <h5 className={style.cardTitle}>{name}</h5>
         </Link>
+        <p className={style.description}>{description[0].toLocaleUpperCase() + description.slice(1)}</p>
         <div className="row">
           <div className="col-sm-4 col-md-4 col-lg-4">
             <p>

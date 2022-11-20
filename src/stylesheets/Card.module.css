@@ -1,5 +1,5 @@
 .card {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   width: 18rem;
   margin: 30px;
   display: inline-block;
@@ -19,14 +19,13 @@
 
 .cardTitle {
   padding: 1.5px;
-  margin: 20px 30px;
+  margin: 20px 30px 25px;
   border: 1.8px dashed rgba(81, 80, 77, 0.8);
   border-radius: 40px;
   color: rgba(42, 40, 40, 0.9);
   font-size: 35px;
   font-family: 'Patrick Hand', cursive;
   font-weight: bold;
-  margin-bottom: 50px;
   background-color: rgba(241, 190, 59, 0.633);
 }
 
@@ -55,6 +54,12 @@
 
 .card p {
   color: rgba(32, 31, 31, 0.76);
+}
+
+.description {
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .row {
