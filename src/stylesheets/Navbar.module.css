@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Caveat&family=Concert+One&family=Courgette&family=Dangrek&family=Fredoka+One&family=Itim&family=Neucha&family=Pangolin&family=Patrick+Hand&family=Sniglet&display=swap");
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(237, 241, 251, 0.8);
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgb(134, 184, 173);
+}
+
+/* rgba(93, 171, 169, 0.848); */
+
+.title {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  width: 140%;
+  color: rgba(93, 137, 171, 0.848);
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Patrick Hand", cursive;
+  text-shadow: 1px 0 rgb(255, 255, 255), 3px 3px rgb(255, 255, 255),
+    0px 0 rgb(255, 255, 255), 0 0px rgb(255, 255, 255);
+}
+
+.img {
+  bottom: 50%;
+  max-width: 16%;
+  opacity: 60%;
+  -webkit-filter: drop-shadow(2px 5px 5px rgb(255, 255, 255));
+  filter: drop-shadow(3px 4px 2px rgb(255, 255, 255));
+}
+
+.about {
+  padding-left: 410px;
+  color: rgba(93, 137, 171, 0.848);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Patrick Hand", cursive;
+  text-shadow: 1px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255),
+    0px 0 rgb(255, 255, 255), 0 0px rgb(255, 255, 255);
+}

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import style from "../stylesheets/SearchBar.module.css";
 
-export default function SearchBar({onSearch}) {
+export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
-  
+
   return (
     <div className={style.search}>
       <form
