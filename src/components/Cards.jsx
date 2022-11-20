@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "../components/Card";
 import style from "../stylesheets/Card.module.css";
+import Navbar from "./Navbar";
 
 export default function Cards({ cities, onClose }) {
-  if (cities) {
+  if (cities.length) {
     return (
       <div className={style.cards}>
         {cities.map((city) => (
@@ -20,6 +21,10 @@ export default function Cards({ cities, onClose }) {
       </div>
     );
   } else {
-    return <div>No cities</div>;
+    return (
+      <div>
+        <h1>No cities</h1>
+      </div>
+    );
   }
 }

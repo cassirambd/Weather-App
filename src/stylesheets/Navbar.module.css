@@ -27,8 +27,8 @@
 
 .img {
   bottom: 50%;
-  max-width: 16%;
-  opacity: 60%;
+  max-width: 18%;
+  opacity: 70%;
   -webkit-filter: drop-shadow(2px 5px 5px rgb(255, 255, 255));
   filter: drop-shadow(3px 4px 2px rgb(255, 255, 255));
 }

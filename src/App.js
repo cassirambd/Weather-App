@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
 import City from "./components/City";
@@ -27,6 +27,7 @@ function App() {
             temp: recurso.main.temp,
             name: recurso.name,
             weather: recurso.weather[0].main,
+            description: recurso.weather[0].description,
             clouds: recurso.clouds.all,
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
@@ -52,17 +53,20 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Navbar onSearch={onSearch} />} />
-        <Route path='/' element={<Cards cities={cities} onClose={onClose} />} />
-        <Route path='/about' element={<About />} />
-        <Route
-          path='/city/:id' //:cityId
-          element={<City onFilter={onFilter} />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <div className='App'>
+      <Route path='/' render={() => <Navbar onSearch={onSearch} />}></Route>
+      <Route exact path='/about' component={About}></Route>
+      <Route
+        exact
+        path='/'
+        render={() => <Cards cities={cities} onClose={onClose} />}
+      ></Route>
+      <Route
+        exact
+        path='/city/:id' //:cityId
+        render={() => <City onFilter={onFilter} />}
+      ></Route>
+    </div>
   );
 }
 
