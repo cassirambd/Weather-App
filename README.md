@@ -7,10 +7,10 @@ Esta es la página de inicio
 
 ![home](./src/img/home.png)
 
-### Deploy
-En este link puedes interactuar con la SPA (Single Page Application): [deploy]https://byk-weather-app.vercel.app/
+## Deploy
+En este link puedes interactuar con la SPA (Single Page Application): https://byk-weather-app.vercel.app/
 
-### Local
+## Local
 Para correr la aplicación de forma local debes seguir los siguientes pasos:
 
 - Descargar el código del repositorio; en la parte superior del repo encontrarás un botón que dice código/code dependiendo del idioma, le das click y se despliegan unas opciones, selecionamos Descargar ZIP/Download ZIP.
