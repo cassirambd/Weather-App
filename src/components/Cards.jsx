@@ -23,8 +23,8 @@ export default function Cards({ cities, onClose }) {
     );
   } else {
     return (
-      <div>
-        <p className={style.no}>No cities</p>
+      <div className={style.no}>
+        <span>No cities</span>
       </div>
     );
   }

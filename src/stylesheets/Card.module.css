@@ -7,7 +7,7 @@
   justify-content: center;
   background: linear-gradient(200deg, #afded461 10%, #e5ecf0d9 80%);
   border-radius: 20px;
-  border: 3.5px dashed rgba(254, 254, 254, 0.9);
+  border: 3px dashed rgba(254, 254, 254, 0.9);
   transition: all 0.2s;
   box-shadow: 12px 12px 2px 1px rgba(103, 185, 194, 0.477);
 }
@@ -61,20 +61,42 @@
   font-weight: 500;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
-
 .no {
-  display: flex;
-  justify-content: center;
-  padding: 2px;
-  margin: 2em 14em;
+  display: inline-flex;
+  margin: 2em;
+  padding: 0em 2em 0em;
+  justify-items: center;
+  align-items: center;
   border: 2px dashed rgba(81, 80, 77, 0.8);
   border-radius: 40px;
   color: rgba(42, 40, 40, 0.9);
-  font-size: 45px;
+  font-size: 38px;
   font-family: "Patrick Hand", cursive;
   background-color: rgba(241, 190, 59, 0.633);
 }
+
+@media all and (max-width: 430px) {
+  .no {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .no {
+    font-size: 25px;
+  }
+  
+  .card {
+    width: 16rem;
+  }
+}
+
+@media all and (max-width: 310px) {
+ .card {
+    width: 14rem;
+  }
+}
+
+
+
+

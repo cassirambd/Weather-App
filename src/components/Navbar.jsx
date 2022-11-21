@@ -8,12 +8,10 @@ import About from "./About.jsx";
 export default function Navbar({ onSearch }) {
   return (
     <div className={style.navBar}>
-      <div style={{ width: "22%" }}>
+      <div className={style.home}>
+        <img className={style.img} src={img} alt='' />
         <Link to='/' style={{ textDecoration: "none" }}>
-          <p className={style.title}>
-            <img className={style.img} src={img} alt='' />
-            Weather App
-          </p>
+          <p className={style.title}>Weather App</p>
         </Link>
       </div>
       <div>

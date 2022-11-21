@@ -38,3 +38,9 @@
   transition: all 0.2s;
   box-shadow: 5px 5px 4px 1px rgba(103, 185, 194, 0.477);
 }
+
+@media all and (max-width: 900px) {
+  .search {
+    margin-top: 2em;
+  }
+}
