@@ -4,6 +4,7 @@
 En esta aplicación podemos buscar el clima en tiempo real de las distintas ciudades del mundo.
 
 Esta es la página de inicio
+
 ![home](./src/img/home.png)
 
 ### Deploy
